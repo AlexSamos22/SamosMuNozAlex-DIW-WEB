@@ -1,175 +1,402 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./CSS/styles.css">
-        <script src="https://kit.fontawesome.com/3276d08f21.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <section>
-                <img src="" alt="">
-                <p>Game Pulse</p>  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/menuPrincipal.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+    <link rel="stylesheet" href="/css/tarjetas.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/menuPrincipal.js" defer></script>
+    <script src="/js/carrusel.js" defer></script>
+    <script src="/js/tarjetas.js" defer></script>
+    <script src="/js/tarjetas2.js" defer></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <section class="contenedor_del_menu">
+            <section class="hamburguesa_del_menu">
+                <img src="iconos/menuPequeño.svg" class="menu__img">
+            </section>
+            <section class="logo_del_menu">
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt="logo web">
+                    <h1>Game Pulse</h1>
+                </a>
             </section>
 
-            <nav>
-                <ul class="Menu-Inicial">
-                    <li><a href="">Ordenadores</a>
-                        <ul class="subMenu">
-                            <li><a href="">Sobremesa</a></li>
-                            <li><a href="">Portatiles</a></li>
-                            <li><a href="">Juegos</a></li>
-                            <li><a href="">Componentes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Consolas</a>
-                        <ul class="subMenu">
-                            <li><a href="">Play</a></li>
-                            <li><a href="">Xbox</a></li>
-                            <li><a href="">Switch</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Perifericos</a>
-                        <ul class="subMenu">
-                            <li><a href="">Cascos</a></li>
-                            <li><li><a href="">Ratones</a></li></li>
-                            <li><li><a href="">Teclados</a></li></li>
-                            <li><li><a href="">Microfonos</a></li></li>
-                            <li><li><a href="">Monitores</a></li></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="enlaces_del_menu">
+                <li id="ordenadores" class="elemento_del_menu elemento_del_menu--mostrar">
+                    <a href="#" class="enlace_del_menu">Ordenadores <img src="iconos/flechaArriba.svg"
+                            class="flecha_del_menu"></a>
 
-            <section>
-                <a href="">Login</a>
-                <a href="">Carrito</a>
+                    <ul class="anidamiento_del_menu">
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Sobremesa</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Portátiles</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Juegos</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Componentes</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="consolas" class="elemento_del_menu elemento_del_menu--mostrar">
+                    <a href="#" class="enlace_del_menu">Consolas <img src="iconos/flechaArriba.svg"
+                            class="flecha_del_menu"></a>
+
+                    <ul class="anidamiento_del_menu">
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">PlayStation</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Xbox</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Switch</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="perifericos" class="elemento_del_menu elemento_del_menu--mostrar">
+                    <a href="#" class="enlace_del_menu">Periféricos <img src="iconos/flechaArriba.svg"
+                            class="flecha_del_menu"></a>
+
+                    <ul class="anidamiento_del_menu">
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Cascos</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Ratones</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Teclados</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Micrófonos</a>
+                        </li>
+                        <li class="dentro_del_menu">
+                            <a href="#" class="enlace_del_menu enlace_del_menu--dentro">Monitores</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <section class="iconos">
+                <a href="/html/login.html"><img src="/iconos/perfil.svg" alt="icono perfil"></a>
+                <a href=""><img src="/iconos/carrito.svg" alt="carrito"></a>
             </section>
-            
-        </header>
-        <main>
-            <section id="carrusel">
-                <ul>
-                    <li>imagen1</li>
-                    <li>imagen2</li>
-                    <li>imagen3</li>
-                    <li>imagen4</li>
-                    <li>imagen5</li>
-                </ul>
+        </section>
+    </nav>
+
+    <section class="contenedor-carrusel">
+        <section class="carrusel" id="carrusel">
+            <article class="imagenes">
+                <img src="/img/resident-evil-4.jpg" alt="">
+            </article>
+
+            <article class="imagenes">
+                <img src="/img/Skulls_and_bones_grande.jpg" alt="">
+            </article>
+
+            <article class="imagenes">
+                <img src="/img/Prince-persia-grande.jpg" alt="">
+            </article>
+
+            <article class="imagenes">
+                <img src="/img/Starfield-grande.jpg" alt="">
+            </article>
+
+        </section>
+    </section>
+
+    <section class="contenedor-global-tarjetas">
+        <section class="contenedor-tarjetas">
+            <h1>Juegos mas premiados</h1>
+            <section id="izquierda" class="flecha_izquierda flecha">
+                <img src="iconos/flecha-izquierda.svg" alt="">
             </section>
 
-            <section id="JuegosSemana">
-                <h3>Juegos de la semana</h3>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+            <ul class="tarjetas">
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/persona-3-reload.jpg" alt="persona-3-reload"></a>
+                    </section>
+                    <section class="info">
+                        <p>Personal 3 Reload</p>
+                        <p>60€</p>
+                    </section>
+                </li>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/tekken8-2.jpg" alt="tekken8"></a>
+                    </section>
+                    <section class="info">
+                        <p>Tekken 8</p>
+                        <p>70€</p>
+                    </section>
+                </li>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/cities-skylines.jpg" alt="cities-skylines"></a>
+                    </section>
+                    <section class="info">
+                        <p>Cities Skylines II</p>
+                        <p>54€</p>
+                    </section>
+                </li>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/elden_Ring.jpg" alt="elden_Ring"></a>
+                    </section>
+                    <section class="info">
+                        <p>Elden Ring</p>
+                        <p>60€</p>
+                    </section>
+                </li>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/Skull_and_bones.jpg" alt="Skull_and_bones"></a>
+                    </section>
+                    <section class="info">
+                        <p>Skull and Bones</p>
+                        <p>70€</p>
+                    </section>
+                </li>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/palword.jpg" alt="palword"></a>
+                    </section>
+                    <section class="info">
+                        <p>PalWorld</p>
+                        <p>25€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/devil-may-cry-5.jpg" alt="devil-may-cry-5"></a>
+                    </section>
+                    <section class="info">
+                        <p>Devil May Cry 5</p>
+                        <p>35€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/resident-evil-4-2.jpg" alt="resident-evil-4"></a>
+                    </section>
+                    <section class="info">
+                        <p>Resident Evil 4</p>
+                        <p>45€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/remnant-2.jpg" alt="remnant-2"></a>
+                    </section>
+                    <section class="info">
+                        <p>Remnant 2</p>
+                        <p>25€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta">
+                    <section class="img">
+                        <a href=""><img src="img/Prince-persia.jpg" alt="Prince-persia"></a>
+                    </section>
+                    <section class="info">
+                        <p>Prince Of Persia</p>
+                        <p>60€</p>
+                    </section>
+                </li>
+            </ul>
+
+
+
+            <section id="derecha" class="flecha_derecha flecha">
+                <img src="iconos/flecha-derecha.svg" alt="">
             </section>
 
-            <section id="MasVendido">
-                <h3>Lo mas vendido</h3>
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+        </section>
 
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <p></p>
-                    <button></button>
-                </article>
+        <section class="contenedor-tarjetas_2">
+            <h1>Lo mas vendidos del mes</h1>
+            <section id="izquierda" class="flecha_2_izquierda flecha_2">
+                <img src="iconos/flecha-izquierda.svg" alt="">
             </section>
-        </main>
 
-        <footer class="pie-pagina">
-            <section class="caja-footer">
-                <h3>Contacto</h3>
-                <p>Telefono: 647-87-65-93</p>
-                <p>Correo: Gamepulse@gmail.com</p>
+            <ul class="tarjetas_2">
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/asus-rog-flow-X16.jpg" alt="asus-rog-flow-X16"></a>
+                    </section>
+                    <section class="info">
+                        <p>Asus Rog Flow X16</p>
+                        <p>2334€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/lords-of-the-fallen.jpg" alt="lords-of-the-fallen"></a>
+                    </section>
+                    <section class="info">
+                        <p>Lords Of The Fallen</p>
+                        <p>60€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/razer-kraken-x-hero.jpg" alt="razer-kraken-x-hero"></a>
+                    </section>
+                    <section class="info">
+                        <p>Razer Kraken X Hero</p>
+                        <p>67€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/super-mario-bros-wonder.jpg" alt="super-mario-bros-wonder"></a>
+                    </section>
+                    <section class="info">
+                        <p>Super Mario Bros Wonder</p>
+                        <p>48€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/ps5-2.webp" alt="Ps5"></a>
+                    </section>
+                    <section class="info">
+                        <p>PS5 + 2 Juegos</p>
+                        <p>480€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/steam-gift-card.jpg" alt="steam-gift-card"></a>
+                    </section>
+                    <section class="info">
+                        <p>Steam Gift Card</p>
+                        <p>48€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/ea-sports-fc-24-12000-fc-pointsr.jpg" alt="fifa-points"></a>
+                    </section>
+                    <section class="info">
+                        <p>Fifa Points</p>
+                        <p>60€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/forgeon-Acrus.jpg" alt="forgeon-Acrus"></a>
+                    </section>
+                    <section class="info">
+                        <p>Forgeon Acrus</p>
+                        <p>250€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/PayStore-Card.jpg" alt="playStore-card"></a>
+                    </section>
+                    <section class="info">
+                        <p>PlayStore Card</p>
+                        <p>95€</p>
+                    </section>
+                </li>
+
+                <li class="tarjeta_2">
+                    <section class="img">
+                        <a href=""><img src="img/fortnite-pack-de-leyendas.jpg" alt="fortnite-pack-de-leyendas"></a>
+                    </section>
+                    <section class="info">
+                        <p>Fortnite Pack Leyendas</p>
+                        <p>25€</p>
+                    </section>
+                </li>
+            </ul>
+
+
+
+            <section id="derecha" class="flecha_2_derecha flecha_2">
+                <img src="iconos/flecha-derecha.svg" alt="">
             </section>
-                
-            <section class="caja-footer">
-                <h3>Sobre nosotros</h3>
+
+        </section>
+    </section>
+
+
+    <footer>
+        <section class="cuerpo_footer">
+
+            <section class="seccion1">
+                <h1>Informacion Contactos</h1>
+
+                <section class="contacto">
+                    <img src="/iconos/movil.svg" alt="movil">
+                    <p>667-89-57-84</p>
+                </section>
+
+                <section class="contacto">
+                    <img src="/iconos/correo.svg" alt="correo">
+                    <p>Gamepulse@gmail.com</p>
+                </section>
+            </section>
+
+            <section class="seccion2">
+                <h1>Sobre nosotros</h1>
                 <p>
-                    En Gamepulse nos apasiona brindarte lo mejor en tecnología y entretenimiento. 
-                    Nos dedicamos a ofrecerte una amplia gama de ordenadores, consolas, juegos y periféricos de calidad superior. 
-                    Nuestro equipo está comprometido en proporcionarte las herramientas y el entretenimiento que necesitas para disfrutar al máximo. 
-                    Descubre nuestro catálogo y únete a la experiencia única que tenemos para ti.
+                    En Game Pulse, nos apasiona brindarte lo mejor en tecnología y entretenimiento.
+                    Nos dedicamos a ofrecerte una amplia gama de ordenadores, consolas, juegos y
+                    periféricos de calidad superior.
                 </p>
             </section>
 
-            <section id="caja-footer">
-                <h3>Redes</h3>
-                <section class="redes">
-                    <a href="" class="fa fa-instagram" target="_blank"></a>
-                    <a href="" class="fa fa-twitter" target="_blank"></a>
-                    <a href="" class="fa fa-tiktok" target="_blank"></a>
-                    <a href="" class="fa fa-facebook" target="_blank"></a>
+            <section class="seccion3">
+                <h1>Redes Sociales</h1>
+                <section class="contenedor-redes">
+                    <section class="redes">
+                        <a href=""><img src="/iconos/instagram.svg" alt="instagram"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="/iconos/twitter.svg" alt="twitter"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="/iconos/facebook.svg" alt="facebook"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="/iconos/tiktok.svg" alt="tiktok"></a>
+                    </section>
                 </section>
             </section>
-        </footer>
-        
 
+        </section>
+    </footer>
+</body>
 
-    </body>
 </html>

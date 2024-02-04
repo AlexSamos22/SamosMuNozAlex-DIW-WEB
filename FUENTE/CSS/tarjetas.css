@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
+
+
+.contenedor-global-tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4; 
+}
+
+.contenedor-tarjetas, .contenedor-tarjetas_2{
+    width: 90%;
+    position: relative;
+    margin: 1%;
+    margin-bottom: 25px;
+}
+
+.contenedor-tarjetas h1, .contenedor-tarjetas_2 h1{
+    margin-bottom: 1%;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.flecha_izquierda, .flecha_derecha, .flecha_2_izquierda, .flecha_2_derecha{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+}
+
+.flecha_izquierda:active, .flecha_derecha:active, .flecha_2_izquierda:active, .flecha_2_derecha:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.flecha_izquierda, .flecha_2_izquierda{
+    left: -22px;
+}
+
+.flecha_derecha, .flecha_2_derecha{
+    right: -22px;
+}
+
+.tarjetas, .tarjetas_2{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns:  calc((100% / 4) - 16px); /*Calcula el numero de columnas quitando espacios*/
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /*Indica que el desplazamiento debe ser horizontal y que se muestren las tarjetas enteras*/
+    gap:20px;
+    scroll-behavior: smooth;/*Da un deslizamiento suave al pasar de tarjeta*/
+    scrollbar-width: none;
+}
+
+.tarjeta, .tarjeta_2{
+    scroll-snap-align: start; /*controla que siempre se muestra una tarjeta entera al deslizar*/
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.img {
+    text-align: center; /* Centrar la imagen */
+}
+
+.img img {
+    width: 100%; /* Ancho máximo de la imagen */
+    height: 200px;
+    border-radius: 10px; /* Borde redondeado para la imagen */
+    border: 2px solid #000; /* Borde negro para la imagen */
+}
+.info {
+    display: flex; /* Espacio entre la imagen y la información */
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+ 
+.info p {
+     margin: 0; /* Eliminar márgenes predeterminados */
+     font-family: "Work Sans", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     color:black;
+ }
+
+
+@media screen and (max-width: 1200px) {
+    .tarjetas, .tarjetas_2{
+      grid-auto-columns: calc((100% / 3) - 8px);
+      gap:10px;
+    } 
+}
+
+@media screen and (max-width: 900px) {
+     .tarjetas, .tarjetas_2 {
+        grid-auto-columns: calc((100% / 2) - 6px); /* Ajusta el tamaño de las columnas */
+
+    }
+}
+
+  @media screen and (max-width: 560px) {
+    .contenedor-tarjetas, .contenedor-tarjetas_2{
+        width: 80%;
+    }
+    .tarjetas, .tarjetas_2 {
+        grid-auto-columns: calc((100% / 1)); /* Ajusta el tamaño de las columnas */
+    }
+}
+
+

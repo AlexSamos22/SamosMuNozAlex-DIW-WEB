@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+
+
+.cuerpo_footer{
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    align-items: center; 
+}
+
+
+.seccion1{
+    width: 25%;
+    margin-left: 10px;
+}
+
+.seccion1 h1{
+    margin-top: 3%;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contacto{
+    margin-top: 5px;
+    display: flex;
+}
+
+.contacto img{
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+}
+
+.contacto p{
+    margin-left: 8px;
+    margin-top: 18px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.seccion2{
+    width: 50%;
+    height: 117px;
+}
+
+.seccion2 h1{
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.seccion2 p{
+    margin-top: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.seccion3{
+    width: 25%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna */
+    align-items: flex-end;
+}
+
+.seccion3 h1{
+    margin-bottom: 10px; /* Espacio entre el título y las imágenes */
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.contenedor-redes{
+    display: flex;
+}
+
+.redes{
+    margin-top: 10px;
+    display: flex;
+    margin: 5px;
+}
+
+.redes img{
+    width: 36px;
+    height: 36px;
+    margin-bottom: 35px;
+}
+
+.redes a:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+@media only screen and (max-width: 1100px) {
+    .cuerpo_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion1,
+    .seccion2,
+    .seccion3 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .seccion3 {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .seccion2{
+        overflow: scroll;
+    }
+   
+}

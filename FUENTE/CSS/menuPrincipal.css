@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, a{
+    font-size: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
+}
+
+h1{
+    font-size: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
+}
+
+.menu{
+    background-color: black;/* Fondo del menú */
+    color: #fff; /* Color del texto del menú */
+    height: 70px; /* Altura del menú */
+}
+
+.logo_del_menu{
+    text-align: center; 
+}
+
+.logo_del_menu h1{
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo_del_menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo_del_menu img{
+    width: 100px;
+}
+
+.iconos img{
+    width: 30px;
+    margin: 5px;
+}
+
+.iconos img:hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+
+.contenedor_del_menu{
+    display: flex;
+    justify-content: space-between; /*Espacio entre elementos*/
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.enlaces_del_menu{
+    height: 100%;
+    transition: transform .5s; 
+    display: flex;
+    z-index: 3; /*Hace que este por encima del carrusel para que se vean las opciones desplegables*/
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.elemento_del_menu{
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+.elemento_del_menu:hover{
+    --transform: rotate(180deg); /*variable que guarda el efecto que va a hacer la flecha del menu*/
+}
+
+
+.enlace_del_menu{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.enlace_del_menu:hover{
+    background-color: #0177E3;
+}
+
+.flecha_del_menu{
+    transform: var(--transform);/*Se aplica la transformacion de la variable a la flecha para que al pasar el raton de la vuelta y se ponga hacia abajo*/
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.dentro_del_menu{
+    height: max-content;
+    background-color: black;
+}
+
+
+.anidamiento_del_menu{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);/*Hace el el submenu interno se deslice hacia abajo*/
+    background-color: #000;
+    z-index: 1;
+    display: none;
+}
+
+.anidamiento_del_menu.visible{
+    display: block;
+}
+
+.enlace_del_menu--dentro{
+    padding: 30px 100px 30px 20px;
+}
+
+.enlace_del_menu--dentro:hover{
+    background-color: #0177E3;
+}
+
+.hamburguesa_del_menu{
+    height: 100%;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+}
+
+.logo_del_menu{
+    text-align: center;
+}
+
+.logo_del_menu img{
+    width: 100px;
+}
+
+.iconos img{
+    width: 30px;
+    margin: 5px;
+}
+
+@media (max-width:800px){
+    .hamburguesa_del_menu{
+        display: flex;
+    }
+
+    .elemento_del_menu{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .elemento_del_menu--activo{
+        --transform: rotate(0);
+        --fondo: #0177E3;
+    }
+
+    .elemento_del_menu--mostrar{
+        background-color: var(--fondo);
+    }
+
+
+    .enlaces_del_menu{
+        position: absolute;
+        height: 100%;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(-100%); /*Para que el menu desplegable salga desde la izquierda*/
+        transition: transform 0.5s ease;
+    }
+
+    .enlaces_del_menu--mostrar{
+        transform: unset;
+        width: 40%;
+        transform: translateX(0); /*Cuando se despliegue se quede pegado a la izquierda*/
+        height: auto;
+    }
+
+    .enlace_del_menu{
+        padding: 25px 0;
+        padding-left: 10px;
+        height: auto;
+    }
+
+    .flecha_del_menu{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .anidamiento_del_menu{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);/*Los elementos del submenu aparecen pegados a su elemento del menu principal al desplegar*/
+        height: 0;
+        transition: height .3s ease;
+    }
+
+    .enlace_del_menu--dentro{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}

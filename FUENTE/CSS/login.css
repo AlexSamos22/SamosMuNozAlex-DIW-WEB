@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: clamp(1rem, 0.9300rem + 0.3200vw, 1.25rem);
+}
+
+h1{
+    font-size: clamp(1.25rem, 1.1800rem + 0.3200vw, 1.3rem);
+}
+
+.contenedor{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    background-color: #e4e4e4;
+}
+
+.img_lateral{
+    background-image: url(/img/fondo-login-registro.jpg);
+    background-position: top;
+    background-size: cover;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+
+.img_lateral img{
+    width: 100%; /* Ancho igual al del contenedor */
+    height: 100%;
+    position: absolute; /* Posición absoluta para la imagen */
+    top: 0; /* Alinear la imagen en la parte superior del contenedor */
+    left: 0; /* Alinear la imagen en la parte izquierda del contenedor */
+}
+
+.formulario{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+    border: 1px solid black;
+}
+
+header{
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header .salida{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 6%;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.formulario .campo{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.campo input,
+.campo button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.campo input{
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.campo input:focus{
+    border-bottom-width: 2px;
+}
+
+.campo button{
+    color: #fff;
+    background-color: #0177E3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.campo button:hover{
+    background-color: #0659a1;
+}
+
+.enlace-formulario{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.enlace-formulario p,
+.enlace-formulario a{
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.enlace-formulario a{
+    color: #0171d3;
+    text-decoration: none;
+}
+
+.enlace-formulario a:hover{
+    text-decoration: underline;
+}
+
+.linea{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.linea::before{
+    content: 'O';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.opciones-media a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0177E3;
+}
+
+.opciones-media a:hover{
+    color: #fff;
+    background-color: #0659a1;
+}
+
+.opciones-media img{
+    height: 28px;
+    width: 28px;
+    color: #0177E3;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 400px) {
+    .formulario{
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .img_lateral{
+        display: none;
+    }
+
+    .contenedor{
+        width: 100%;
+    }
+}

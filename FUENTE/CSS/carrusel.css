@@ -1,0 +1,45 @@
+.contenedor-carrusel{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1; /* Hace que este detrás del menú desplegable */
+}
+
+.contenedor-carrusel img{
+    width: 100%;
+    max-height: 100%;
+}
+
+.carrusel{
+    display: flex;
+    transition: all 600ms;
+    height: 400px;
+    overflow: hidden;
+}
+
+.imagenes{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .carrusel{
+        height: 300px;
+    }
+
+  }
+
+@media screen and (max-width: 1000px) {
+    .carrusel{
+        height: 250px;
+    }
+
+  }
+
+@media screen and (max-width: 500px) {
+    .carrusel{
+        height: 215px;
+    }
+
+  }
