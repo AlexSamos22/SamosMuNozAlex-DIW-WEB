@@ -47,17 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (window.innerWidth < 800) {
                 // Cambiar la imagen src con la imagen alternativa según la imagen original
                 switch (rutaOriginal) {
-                    case '/img/resident-evil-4.jpg':
-                        imagen.setAttribute('src', '/img/resident-evil-4-2.jpg');
+                    case '/FUENTE/IMG/resident-evil-4.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/resident-evil-4-2.jpg');
                         break;
-                    case '/img/Skulls_and_bones_grande.jpg':
-                        imagen.setAttribute('src', '/img/Skull_and_bones.jpg');
+                    case '/FUENTE/IMG/Skulls_and_bones_grande.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/Skull_and_bones.jpg');
                         break;
-                    case '/img/Prince-persia-grande.jpg':
-                        imagen.setAttribute('src', '/img/Prince-persia.jpg');
+                    case '/FUENTE/IMG/Prince-persia-grande.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/Prince-persia.jpg');
                         break;
-                    case '/img/Starfield-grande.jpg':
-                        imagen.setAttribute('src', '/img/starfield.jpg');
+                    case '/FUENTE/IMG/Starfield-grande.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/starfield.jpg');
                         break;
                 }
             }
@@ -65,17 +65,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (window.innerWidth >= 800) {
                 // Cambiar la imagen src con la imagen alternativa según la imagen original
                 switch (rutaOriginal) {
-                    case '/img/resident-evil-4-2.jpg':
-                        imagen.setAttribute('src', '/img/resident-evil-4.jpg');
+                    case '/FUENTE/IMG/resident-evil-4-2.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/resident-evil-4.jpg');
                         break;
-                    case '/img/Skull_and_bones.jpg':
-                        imagen.setAttribute('src', '/img/Skulls_and_bones_grande.jpg');
+                    case '/FUENTE/IMG/Skull_and_bones.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/Skulls_and_bones_grande.jpg');
                         break;
-                    case '/img/Prince-persia.jpg':
-                        imagen.setAttribute('src', '/img/Prince-persia-grande.jpg');
+                    case '/FUENTE/IMG/Prince-persia.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/Prince-persia-grande.jpg');
                         break;
-                    case '/img/starfield.jpg':
-                        imagen.setAttribute('src', '/img/Starfield-grande.jpg');
+                    case '/FUENTE/IMG/starfield.jpg':
+                        imagen.setAttribute('src', '/FUENTE/IMG/Starfield-grande.jpg');
                         break;
                 }
             }
