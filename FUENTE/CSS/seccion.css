@@ -35,7 +35,7 @@ body{
     cursor: pointer;
     flex-direction: column;
     border-radius: 10px;
-    border: 2px solid black; /* Añade un borde negro de 2px 
+    border: 2px solid black;
     text-align: center;
     width: 20%;
     height: 325px;
@@ -65,14 +65,14 @@ body{
 }
 
 .tarjeta button{
-    width: 65%; /* Asegura que el botón ocupe todo el ancho disponible 
-    margin: 0 auto; /* Centra horizontalmente el botón 
+    width: 65%; 
+    margin: 0 auto; 
     margin-top: 20px;
-    text-align: center; /* Centrar el texto dentro del botón 
+    text-align: center; 
     background-color: #0177E3;
-    border: none; /* Quita el borde predeterminado 
-    border-radius: 5px; /* Añade bordes redondos 
-    padding: 10px; /* Añade un poco de espacio interno al botón 
+    border: none;  
+    border-radius: 5px; 
+    padding: 10px; 
 }
 
 button a{

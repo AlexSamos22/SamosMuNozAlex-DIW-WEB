@@ -36,11 +36,11 @@ h1{
 }
 
 .img_lateral img{
-    width: 100%; /* Ancho igual al del contenedor */
+    width: 100%; 
     height: 100%;
-    position: absolute; /* Posición absoluta para la imagen */
-    top: 0; /* Alinear la imagen en la parte superior del contenedor */
-    left: 0; /* Alinear la imagen en la parte izquierda del contenedor */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
 }
 
 .formulario{

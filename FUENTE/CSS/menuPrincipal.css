@@ -14,9 +14,9 @@ h1{
 }
 
 .menu{
-    background-color: black;/* Fondo del menú */
-    color: #fff; /* Color del texto del menú */
-    height: 70px; /* Altura del menú */
+    background-color: black;
+    color: #fff; 
+    height: 70px; 
 }
 
 .logo_del_menu{

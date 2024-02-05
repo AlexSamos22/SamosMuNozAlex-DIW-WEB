@@ -6,11 +6,9 @@ footer{
     width: 100%;
 }
 
-
-
 .cuerpo_footer{
     display: flex;
-    width: 92%;
+    width: 92vw;;
     margin: 0 auto;
     align-items: center; 
 }
@@ -70,12 +68,12 @@ footer{
     width: 25%;
     margin-right: 10px;
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección a columna */
+    flex-direction: column; 
     align-items: flex-end;
 }
 
 .seccion3 h1{
-    margin-bottom: 10px; /* Espacio entre el título y las imágenes */
+    margin-bottom: 10px; 
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-style: normal;

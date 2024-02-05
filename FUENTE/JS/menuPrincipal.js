@@ -33,7 +33,6 @@ window.addEventListener('resize', () => {
     const lista = document.querySelector('.enlaces_del_menu');
     const menu = document.querySelector('.hamburguesa_del_menu');
 
-    // Función para agregar el evento de clic a los elementos de la lista
     const agregarClick = () => {
         elementosLista.forEach(elemento => {
             elemento.addEventListener('click', () => {
